@@ -8,6 +8,9 @@ function MainMenu(){
         <li>
             <Link to="/E2">Ejercicio2</Link>
         </li>
+        <li>
+            <Link to="/KieneresTU">KieneresTU</Link>
+        </li>
     </ul>
 </nav>
 }
