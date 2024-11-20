@@ -1,4 +1,6 @@
 import { Link, Outlet } from "react-router-dom"
+import FooterComponent from "../components/FooterComponent"
+
 function MainMenu(){
     return <nav>
     <ul className="flex flex-row gap-4">
@@ -20,7 +22,7 @@ function Layout(){
         <img src="" alt=""/>
         <MainMenu/>
         <Outlet/>
-        <Footer/>
+        <FooterComponent/>
     </main>
     )
 }

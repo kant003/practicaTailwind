@@ -1,8 +1,6 @@
 import { useEffect } from "react"
 import initGame from "./asteroidsGame/game"
 
-import { useEffect } from "react"
-import initGame from "./asteroidsGame/game"
 
 export default function Ejer1(){
 
@@ -22,4 +20,5 @@ export default function Ejer1(){
     
     
     </canvas>
+
 }
