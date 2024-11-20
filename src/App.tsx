@@ -7,6 +7,10 @@ import NotFound from './pages/NotFound'
 import Uh2 from './pages/BraisCasares/uh2'
 import KieneresTU from './pages/KieneresTU'
 import Formulario from './pages/Formulario'
+import Login from "./Wilfredo Pino/Login/login"; // Importa el componente de login
+import Registro from "./Wilfredo Pino/registro/registro"; // Importa el componente de registro
+import { dev } from 'astro'
+
 
 function App() {
 
@@ -20,6 +24,8 @@ function App() {
           <Route path="Formulario" element={<Formulario />} />
           <Route path="Uh2" element={<Uh2 />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="login" element={<Login />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
