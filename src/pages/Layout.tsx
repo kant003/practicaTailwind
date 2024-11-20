@@ -8,11 +8,14 @@ function MainMenu(){
         <li>
             <Link to="/E2">Ejercicio2</Link>
         </li>
+        <li>
+            <Link to="/Formulario">Formulario</Link>
+        </li>
     </ul>
 </nav>
 }
 
-const Footer = () => <footer>Pagina creada por Angel</footer>
+const Footer = () => <footer>Pagina creada por Jacobo</footer>
 
 function Layout(){
     return (
