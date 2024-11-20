@@ -17,6 +17,9 @@ function MainMenu() {
             <li>
                 <Link to="/Uh2">Uh2</Link>
             </li>
+            <li>
+                <Link to="/Phone">Movil</Link>
+            </li>
         </ul>
     </nav>
 

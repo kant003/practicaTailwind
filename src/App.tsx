@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound'
 import Uh2 from './pages/BraisCasares/uh2'
 import KieneresTU from './pages/KieneresTU'
 import Formulario from './pages/Formulario'
+import Phone from './pages/Roi/Phone'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="KieneresTU" element={<KieneresTU />} />
           <Route path="Formulario" element={<Formulario />} />
           <Route path="Uh2" element={<Uh2 />} />
+          <Route path="Phone" element={<Phone />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
