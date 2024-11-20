@@ -9,6 +9,7 @@ function MainMenu(){
             <Link to="/E2">Ejercicio2</Link>
         </li>
         <li>
+            <Link to="/KieneresTU">KieneresTU</Link>
             <Link to="/Formulario">Formulario</Link>
         </li>
     </ul>
