@@ -4,9 +4,9 @@ function KieneresTU() {
     const [personajeSeleccionado, setPersonajeSeleccionado] = useState("");
     const [bloqueado, setBloqueado] = useState(null);
     const [personajeBloqueado, setPErsonajeBloqueado] = useState(personajeSeleccionado);
-    const lockPersonaje = (personaje , event) => {
+    const lockPersonaje = (personaje, event) => {
         setPersonajeSeleccionado(personaje);
-        setPErsonajeBloqueado(personaje)    
+        setPErsonajeBloqueado(personaje)
         setBloqueado(event.currentTarget.id);
     };
 
@@ -38,6 +38,7 @@ function KieneresTU() {
                         onMouseEnter={() => setPersonajeSeleccionado("Jinx")}
                         onMouseLeave={() => setPersonajeSeleccionado(bloqueado ? personajeBloqueado : "")}
                     />
+
                 </div>
 
                 <div id="jordi-wild" className="mx-3">

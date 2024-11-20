@@ -13,13 +13,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>} >
-            <Route path="E1" element={<Ejer1/>} />
-            <Route path="E2" element={<Ejer2/>} />
-            <Route path="KieneresTU" element={<KieneresTU/>}/>
-            <Route path="Formulario" element={<Formulario/>} />
-            <Route path="Uh2" element={<Uh2 />} />
-            <Route path="*" element={<NotFound/>} />
+        <Route path="/" element={<Layout />} >
+          <Route path="E1" element={<Ejer1 />} />
+          <Route path="E2" element={<Ejer2 />} />
+          <Route path="KieneresTU" element={<KieneresTU />} />
+          <Route path="Formulario" element={<Formulario />} />
+          <Route path="Uh2" element={<Uh2 />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
