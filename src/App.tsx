@@ -4,7 +4,7 @@ import Ejer1 from './pages/ejer1'
 import Ejer2 from './pages/ejer2'
 import Layout from './pages/Layout'
 import NotFound from './pages/NotFound'
-import KieneresTU from './pages/AlvaroDiaz'
+import KieneresTU from './pages/KieneresTU'
 
 
 function App() {
