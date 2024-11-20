@@ -6,7 +6,7 @@ export class Player{
     color:string = 'white'
     angle: number
     thrust: number // aceleración
-    friction:number
+    //friction:number
 
     isRotatingLeft: boolean
     isRotatingRight: boolean
@@ -17,9 +17,9 @@ export class Player{
     constructor(public x:number,public y:number){
         this.velocity = {x:0, y:0}
         this.size=20
-        this.angle =0
-        this.thrust = 0.09
-        this.friction = 0.99
+        this.angle = 0
+        this.thrust = 0.2
+        //this.friction = 0.99
         this.isRotatingLeft = false
         this.isRotatingRight = false
         this.isThrusting = false
@@ -38,29 +38,38 @@ export class Player{
         ctx.fill()
         ctx.restore()
     }
-    update(){
+    update(friction:number = 0.99){
         if(this.isThrusting){
-            this.thrust = 0.05
-        }else{
-            this.thrust = 0 
-        }
             this.velocity.x += Math.cos(this.angle) * this.thrust
             this.velocity.y += Math.sin(this.angle) * this.thrust
-
+        }
+           
         if(this.isRotatingLeft) this.angle -= this.rotationSpeed
         if(this.isRotatingRight) this.angle += this.rotationSpeed
 
         this.x += this.velocity.x
         this.y += this.velocity.y
 
-        this.velocity.x *= this.friction
-        this.velocity.y *= this.friction
+        this.velocity.x *= friction
+        this.velocity.y *= friction
 
 
-        if(this.x < 0) this.x = WIDTH 
-        if(this.y < 0) this.y = HEIGHT 
-        if(this.x > WIDTH) this.x = 0
-        if(this.y > HEIGHT) this.y = 0
+        if(this.x < 0) {
+            this.x = WIDTH
+            this.y = HEIGHT - this.y
+        }    
+        if(this.y < 0) {
+            this.y = HEIGHT 
+            this.x = WIDTH - this.x
+        }
+        if(this.x > WIDTH){
+            this.x = 0
+            this.y = HEIGHT - this.y
+        } 
+        if(this.y > HEIGHT){
+            this.y = 0
+            this.x = WIDTH - this.x
+        } 
     }
 
 
