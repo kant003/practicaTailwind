@@ -14,7 +14,7 @@ const marginValue = margin??"10"
 
 
 return <>
-    <motion.footer className={`z-10 bg-[#232323] p-4 divide-y-2 divide-solid divide-zinc-500 mx-${margin} mb-10 shadow-sm shadow-black rounded-lg will-change-transform duration-500 ease-out`}
+    <motion.footer className={`z-10 bg-[#232323] p-4 divide-y-2 divide-solid divide-zinc-500 mx-${marginValue} mb-10 shadow-sm shadow-black rounded-lg will-change-transform duration-500 ease-out`}
         style={{y}}
         >
         <div className="flow flow-col sm:grid sm:grid-cols-2 py-3 content-center">
