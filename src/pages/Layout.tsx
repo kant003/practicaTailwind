@@ -33,6 +33,13 @@ function MainMenu() {
                 <Link to="/E3">Ejercicio2</Link>
             </li>
             <li>
+                <Link to="/login">Login</Link>
+            </li>
+
+            <li>
+                <Link to="/registro">Registro</Link>
+            </li>
+            <li>
               <Link to="/T">Tarjeta</Link>
             </li>
             <li>
