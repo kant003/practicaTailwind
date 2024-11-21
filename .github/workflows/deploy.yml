@@ -3,7 +3,7 @@ name: Deploy Vite Project to GitHub Pages
 on:
   push:
     branches:
-      - main  # Cambia "main" si tu rama principal tiene otro nombre
+      - master  # Cambia "main" si tu rama principal tiene otro nombre
 
 jobs:
   build-deploy:
