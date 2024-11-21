@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom"
 function MainMenu() {
     return <nav>
-        <ul className="flex flex-row gap-4">
+        <ul className="flex flex-row gap-4 flex-wrap">
             <li>
                 <Link to="/E1">Ejercicio1</Link>
             </li>

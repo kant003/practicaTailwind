@@ -4,6 +4,7 @@ import Ejer1 from './pages/Ejer1'
 import Ejer2 from './pages/Ejer2'
 import Ejer3 from './pages/Ejer3'
 import Uh35 from './pages/uh35'
+import Selector22 from './pages/OSCAR/Selector22'
 import PaginaGatitos from './pages/mario/PaginaGatitos.tsx'
 import Layout from './pages/Layout'
 import Boton from "./pages/Boton";
@@ -14,14 +15,13 @@ import Tarjeta from './pages/tarjeta/Tarjeta'
 import Uh2 from './pages/BraisCasares/uh2'
 import KieneresTU from './pages/KieneresTU'
 import Formulario from './pages/Formulario'
-import Selector22 from './pages/OSCAR/selector22' 
-import Phone from './pages/Roi/Phone'
 import PaginaGaleria from './pages/PaginaGaleria'
 import UH3 from './pages/UH3'
 import Login from "./pages/Wilfredo/Login"
 import Registro from "./pages/Wilfredo/Registro"
 import Uh37 from './pages/Uh37'
-
+import { Phone } from 'lucide-react'
+import "flyonui/flyonui"
 function App() {
 
   return (

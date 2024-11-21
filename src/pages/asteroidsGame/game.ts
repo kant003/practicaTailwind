@@ -65,8 +65,8 @@ export default function initGame() {
     gameLoop()
 
 
-    function checkPlayerAsteroidCollision():boolean{
-
+    function checkPlayerAsteroidCollision(): boolean{
+        return false
     }
 
     function collisionBulletAsteroid(): boolean{

@@ -5,7 +5,7 @@ import foto4 from './assets/foto4.jpeg';
 import foto5 from './assets/foto5.jpeg';
 import foto6 from './assets/foto6.jpeg';
 
-const selector22 = () => {
+const Selector22 = () => {
   return (
     <div>
       <h1
@@ -30,4 +30,4 @@ const selector22 = () => {
     </div>
   )
 }
-export default selector22
+export default Selector22

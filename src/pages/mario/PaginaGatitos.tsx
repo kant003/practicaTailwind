@@ -1,4 +1,3 @@
-import React from "react";
 import Imagen1 from "../../assets/gato1.jpg";
 import Imagen2 from "../../assets/gato2.jfif";
 import Imagen3 from "../../assets/gato3.jpg";

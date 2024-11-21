@@ -35,9 +35,9 @@ export class EdgeAsteroidFactory implements AsteroidFactory {
 
 }
 
-class CenterAsteroidFactory implements AsteroidFactory {
+/* class CenterAsteroidFactory implements AsteroidFactory {
     create(): Asteroid {
         throw new Error("Method not implemented.");
     }
 
-}
+} */
