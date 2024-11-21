@@ -17,9 +17,11 @@ function MainMenu() {
             <li>
                 <Link to="/Uh2">Uh2</Link>
             </li>
+            <li>
+                <Link to="/E3">Ejercicio2</Link>
+            </li>
         </ul>
     </nav>
-
 }
 
 const Footer = () => <footer>Pagina creada por Jacobo</footer>
