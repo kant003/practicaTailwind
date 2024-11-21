@@ -46,12 +46,32 @@ export default function initGame() {
 
         // Destruir asteroides fuera del mundo
         
-
+        collisionBulletAsteroid()
 
         requestAnimationFrame(gameLoop)
     }
     gameLoop()
 
+
+    function collisionBulletAsteroid(): boolean{
+        asteroids.forEach((asteroid, asteroidIndex) => {
+            player1.bullets.forEach((bullet, bulletIndex) => {
+                const dx = asteroid.x - bullet.x
+                const dy = asteroid.y - bullet.y
+                const distance = Math.sqrt(dx*dx  +  dy*dy)
+                if(distance <= asteroid.size + bullet.size){
+                    asteroids.splice(asteroidIndex,1)
+                    player1.bullets.splice(bulletIndex, 1)
+                    const sound = new Audio('./sounds/explosion.mp3')
+                    sound.play()
+                    return true
+                }
+            })
+        })
+        return false
+    }
+
+    
 
 
     document.addEventListener('keydown', (e) => {
