@@ -21,7 +21,6 @@ import Login from "./pages/Wilfredo/Login"
 import Registro from "./pages/Wilfredo/Registro"
 import Uh37 from './pages/Uh37'
 import { Phone } from 'lucide-react'
-import "flyonui/flyonui"
 function App() {
 
   return (
