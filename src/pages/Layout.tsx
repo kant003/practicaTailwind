@@ -9,6 +9,9 @@ function MainMenu() {
                 <Link to="/E2">Ejercicio2</Link>
             </li>
             <li>
+                <Link to="/Galeria">GaleriaNicolas</Link>
+            </li>
+            <li>
                 <Link to="/KieneresTU">KieneresTU</Link>
             </li>
             <li>
@@ -18,11 +21,19 @@ function MainMenu() {
                 <Link to="/Uh2">Uh2</Link>
             </li>
             <li>
-                <Link to="/Phone">Movil</Link>
+                 <Link to="/Phone">Movil</Link>
+            </li>
+            <li>
+                 <Link to="/UH3">UH3</Link>
+            </li>
+            <li>
+                <Link to="/E3">Ejercicio2</Link>
+            </li>
+            <li>
+              <Link to="/T">Tarjeta</Link>
             </li>
         </ul>
     </nav>
-
 }
 
 const Footer = () => <footer>Pagina creada por Jacobo</footer>
