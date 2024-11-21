@@ -15,6 +15,9 @@ export default function initGame() {
     const asteroids: Asteroid[] = []
     const PLAYER_FRICTION = 0.99
     const ASTEROID_FRICTION = 1
+    let gameOver = false
+
+
     asteroids.push(new EdgeAsteroidFactory().create())
     asteroids.push(new EdgeAsteroidFactory().create())
 
@@ -27,6 +30,14 @@ export default function initGame() {
         if(!ctx) return
         
         ctx?.clearRect(0, 0, canvas.width, canvas.height)
+
+        if(gameOver){
+            ctx.fillStyle = 'red'
+            ctx.font = "bold 40px Arial"
+            ctx.textAlign = 'center'
+            ctx.fillText("GAME OVER", WIDTH/2, HEIGHT/2)
+            return
+        }
 
         player1.draw(ctx)
         player1.update(PLAYER_FRICTION)
@@ -48,10 +59,16 @@ export default function initGame() {
         
         collisionBulletAsteroid()
 
+        gameOver = checkPlayerAsteroidCollision()
+
         requestAnimationFrame(gameLoop)
     }
     gameLoop()
 
+
+    function checkPlayerAsteroidCollision():boolean{
+        
+    }
 
     function collisionBulletAsteroid(): boolean{
         asteroids.forEach((asteroid, asteroidIndex) => {
@@ -71,7 +88,7 @@ export default function initGame() {
         return false
     }
 
-    
+
 
 
     document.addEventListener('keydown', (e) => {
