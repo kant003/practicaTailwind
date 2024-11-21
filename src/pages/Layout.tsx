@@ -1,7 +1,6 @@
 import { Link, Outlet } from "react-router-dom"
 function MainMenu() {
     return <nav>
-
         <ul className="flex flex-row gap-4">
             <li>
                 <Link to="/E1">Ejercicio1</Link>
@@ -42,11 +41,14 @@ function MainMenu() {
            <li>
               <Link to="/uh35">uh35</Link>
            </li>
+           <li>
+            <Link to="/Boton">Boton</Link>
+           </li>
         </ul>
     </nav>
 }
 
-const Footer = () => <footer>Pagina creada por Jacobo</footer>
+const Footer = () => <footer>Pagina creada por Angel</footer>
 
 function Layout() {
     return (
