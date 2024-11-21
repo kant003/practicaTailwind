@@ -8,6 +8,7 @@ import PaginaGatitos from './pages/mario/PaginaGatitos.tsx'
 import Layout from './pages/Layout'
 import Boton from "./pages/Boton";
 import NotFound from './pages/NotFound'
+import Uh20 from './pages/Uh20'
 import ScrollPage from './pages/ScrollPage'
 import Tarjeta from './pages/tarjeta/Tarjeta'
 import Uh2 from './pages/BraisCasares/uh2'
@@ -41,6 +42,7 @@ function App() {
           <Route path="Boton" element={<Boton />} />
           <Route path="Uh37" element={<Uh37/>} />
           <Route path="selector22" element={<Selector22/>}/>
+          <Route path="Uh20" element={<Uh20 />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

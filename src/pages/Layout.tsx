@@ -50,6 +50,9 @@ function MainMenu() {
            <li>
                <Link to="/selector22">Selector</Link>
            </li>
+           <li>
+               <Link to="/Uh20">User history 20</Link>
+           </li>
         </ul>
     </nav>
 }
