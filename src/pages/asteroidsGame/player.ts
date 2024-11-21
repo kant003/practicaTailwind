@@ -1,12 +1,8 @@
-import { HEIGHT, WIDTH } from "./game"
+import { Bullet } from "./bullet"
+import { Mobile } from "./mobile"
 
-export class Player {
-    velocity: { x: number, y: number }
-    size: number
+export class Player extends Mobile{
     color: string = 'white'
-    angle: number
-    thrust: number // aceleración
-    //friction:number
 
     isRotatingLeft: boolean
     isRotatingRight: boolean
@@ -14,12 +10,11 @@ export class Player {
 
     rotationSpeed: number
 
+    bullets: Bullet[] = []
+
     constructor(public x: number, public y: number) {
-        this.velocity = { x: 0, y: 0 }
-        this.size = 20
-        this.angle = 0
-        this.thrust = 0.2
-        //this.friction = 0.99
+        super(x,y,0,0.2,20)
+
         this.isRotatingLeft = false
         this.isRotatingRight = false
         this.isThrusting = false
@@ -38,6 +33,8 @@ export class Player {
         ctx.fill()
         ctx.restore()
     }
+
+   
     update(friction: number = 0.99) {
         if (this.isThrusting) {
             this.velocity.x += Math.cos(this.angle) * this.thrust
@@ -46,30 +43,15 @@ export class Player {
 
         if (this.isRotatingLeft) this.angle -= this.rotationSpeed
         if (this.isRotatingRight) this.angle += this.rotationSpeed
+       
+        super.update(friction)
+        this.sphericWorld()
+    }
 
-        this.x += this.velocity.x
-        this.y += this.velocity.y
+    shot(){
+        const newBullet = new Bullet(this.x, this.y, this.angle)
 
-        this.velocity.x *= friction
-        this.velocity.y *= friction
-
-
-        if (this.x < 0) {
-            this.x = WIDTH
-            this.y = HEIGHT - this.y
-        }
-        if (this.y < 0) {
-            this.y = HEIGHT
-            this.x = WIDTH - this.x
-        }
-        if (this.x > WIDTH) {
-            this.x = 0
-            this.y = HEIGHT - this.y
-        }
-        if (this.y > HEIGHT) {
-            this.y = 0
-            this.x = WIDTH - this.x
-        }
+        this.bullets.push(newBullet)
     }
 
 
