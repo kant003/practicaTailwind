@@ -22,6 +22,7 @@ import Registro from "./pages/Wilfredo/Registro"
 import Uh37 from './pages/Uh37'
 import { Phone } from 'lucide-react'
 import EjApexGraph from './pages/EjApexGraph.tsx'
+import Treeview from './components/Treeview.tsx'
 function App() {
 
   return (
@@ -29,7 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route path="T" element={<Tarjeta />} />
-          <Route path="ScrollPage" element= {<ScrollPage/>} />
+          <Route path="ScrollPage" element={<ScrollPage />} />
           <Route path="E1" element={<Ejer1 />} />
           <Route path="E2" element={<Ejer2 />} />
           <Route path='E3' element={<PaginaGatitos />} />
@@ -40,15 +41,16 @@ function App() {
           <Route path="Phone" element={<Phone />} />
           <Route path="UH3" element={<UH3 />} />
           <Route path="Galeria" element={<PaginaGaleria />} />
-          <Route path="uh35" element={<Uh35/>} />
+          <Route path="uh35" element={<Uh35 />} />
           <Route path="Boton" element={<Boton />} />
-          <Route path="Uh37" element={<Uh37/>} />
-          <Route path="selector22" element={<Selector22/>}/>
+          <Route path="Uh37" element={<Uh37 />} />
+          <Route path="selector22" element={<Selector22 />} />
           <Route path="Uh20" element={<Uh20 />} />
           <Route path="*" element={<NotFound />} />
           <Route path="Login" element={<Login />} />
           <Route path="Registro" element={<Registro />} />
           <Route path="EjApexGraph" element={<EjApexGraph />} />
+          <Route path="treeview" element={<Treeview />} />
         </Route>
       </Routes>
     </BrowserRouter>
