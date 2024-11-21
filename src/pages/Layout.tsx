@@ -21,6 +21,9 @@ function MainMenu() {
                 <Link to="/Uh2">Uh2</Link>
             </li>
             <li>
+                <Link to="/UH3">UH3</Link>
+            </li>
+            <li>
                 <Link to="/E3">Ejercicio2</Link>
             </li>
         </ul>
