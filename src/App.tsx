@@ -16,6 +16,7 @@ import Formulario from './pages/Formulario'
 import Phone from './pages/Roi/Phone'
 import PaginaGaleria from './pages/PaginaGaleria'
 import UH3 from './pages/UH3'
+import Uh37 from './pages/Uh37'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="Galeria" element={<PaginaGaleria />} />
           <Route path="uh35" element={<Uh35/>} />
           <Route path="Boton" element={<Boton />} />
+          <Route path="Uh37" element={<Uh37/>} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

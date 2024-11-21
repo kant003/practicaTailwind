@@ -44,6 +44,9 @@ function MainMenu() {
            <li>
             <Link to="/Boton">Boton</Link>
            </li>
+           <li>
+              <Link to="/Uh37">Teclado</Link>
+           </li>
         </ul>
     </nav>
 }
