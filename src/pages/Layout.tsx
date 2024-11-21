@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom"
 function MainMenu() {
     return <nav>
+
         <ul className="flex flex-row gap-4">
             <li>
                 <Link to="/E1">Ejercicio1</Link>
@@ -37,6 +38,9 @@ function MainMenu() {
             </li>
             <li>
               <Link to="/ScrollPage">Scroll Page</Link>
+           </li>
+           <li>
+              <Link to="/uh35">uh35</Link>
            </li>
         </ul>
     </nav>

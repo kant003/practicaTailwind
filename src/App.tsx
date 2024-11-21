@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-
 import Ejer1 from './pages/Ejer1'
 import Ejer2 from './pages/Ejer2'
 import PaginaGatitos from './pages/mario/PaginaGatitos.tsx'
 import Ejer3 from './pages/Ejer3'
+import Uh35 from './pages/uh35'
 import Layout from './pages/Layout'
 import NotFound from './pages/NotFound'
 import ScrollPage from './pages/ScrollPage'
@@ -34,6 +34,7 @@ function App() {
           <Route path="Phone" element={<Phone />} />
           <Route path="UH3" element={<UH3 />} />
           <Route path="Galeria" element={<PaginaGaleria />} />
+          <Route path="uh35" element={<Uh35/>} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
