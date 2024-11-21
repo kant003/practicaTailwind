@@ -31,10 +31,22 @@ export default function initGame() {
         player1.draw(ctx)
         player1.update(PLAYER_FRICTION)
 
+
+        player1.bullets = player1.bullets.filter(bullet => !bullet.isOutOfBounds())
+
+        player1.bullets.forEach(bullet =>{
+            bullet.draw(ctx)
+            bullet.update(1)
+        })
+
         asteroids.forEach(asteroid => {
             asteroid.update(ASTEROID_FRICTION)
             asteroid.draw(ctx)
         })
+
+        // Destruir asteroides fuera del mundo
+        
+
 
         requestAnimationFrame(gameLoop)
     }
@@ -46,6 +58,8 @@ export default function initGame() {
         if (e.key === 'ArrowLeft') player1.isRotatingLeft = true
         if (e.key === 'ArrowRight') player1.isRotatingRight = true
         if (e.key === 'ArrowUp') player1.isThrusting = true
+        if (e.key.toLocaleLowerCase() === 'p') player1.shot()
+
     })
 
     document.addEventListener('keyup', (e) => {

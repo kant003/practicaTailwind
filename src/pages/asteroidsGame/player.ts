@@ -1,3 +1,4 @@
+import { Bullet } from "./bullet"
 import { Mobile } from "./mobile"
 
 export class Player extends Mobile{
@@ -8,6 +9,8 @@ export class Player extends Mobile{
     isThrusting: boolean
 
     rotationSpeed: number
+
+    bullets: Bullet[] = []
 
     constructor(public x: number, public y: number) {
         super(x,y,0,0.2,20)
@@ -30,6 +33,8 @@ export class Player extends Mobile{
         ctx.fill()
         ctx.restore()
     }
+
+   
     update(friction: number = 0.99) {
         if (this.isThrusting) {
             this.velocity.x += Math.cos(this.angle) * this.thrust
@@ -40,6 +45,13 @@ export class Player extends Mobile{
         if (this.isRotatingRight) this.angle += this.rotationSpeed
        
         super.update(friction)
+        this.sphericWorld()
+    }
+
+    shot(){
+        const newBullet = new Bullet(this.x, this.y, this.angle)
+
+        this.bullets.push(newBullet)
     }
 
 
