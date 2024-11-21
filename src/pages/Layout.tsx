@@ -42,11 +42,29 @@ function MainMenu() {
             <li>
               <Link to="/T">Tarjeta</Link>
             </li>
+            <li>
+              <Link to="/ScrollPage">Scroll Page</Link>
+            </li>
+            <li>
+              <Link to="/uh35">uh35</Link>
+           </li>
+           <li>
+            <Link to="/Boton">Boton</Link>
+           </li>
+           <li>
+              <Link to="/Uh37">Teclado</Link>
+           </li>
+           <li>
+               <Link to="/selector22">Selector</Link>
+           </li>
+           <li>
+               <Link to="/Uh20">User history 20</Link>
+           </li>
         </ul>
     </nav>
 }
 
-const Footer = () => <footer>Pagina creada por Jacobo</footer>
+const Footer = () => <footer>Pagina creada por Angel</footer>
 
 function Layout() {
     return (
@@ -58,6 +76,6 @@ function Layout() {
         </main>
     )
 }
-
+ 
 
 export default Layout
