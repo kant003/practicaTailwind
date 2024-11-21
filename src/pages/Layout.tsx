@@ -3,10 +3,10 @@ function MainMenu() {
     return <nav>
         <ul className="flex flex-row gap-4 flex-wrap">
             <li>
-                <Link to="/E1">Ejercicio1</Link>
+                <Link to="E1">Ejercicio1</Link>
             </li>
             <li>
-                <Link to="/E2">Ejercicio2</Link>
+                <Link to="E2">Ejercicio2</Link>
             </li>
             <li>
                 <Link to="/E3">PaginaGatitos</Link>
