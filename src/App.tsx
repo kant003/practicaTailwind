@@ -7,9 +7,9 @@ import NotFound from './pages/NotFound'
 import Uh2 from './pages/BraisCasares/uh2'
 import KieneresTU from './pages/KieneresTU'
 import Formulario from './pages/Formulario'
-import Login from "./Wilfredo Pino/Login/login"; // Importa el componente de login
-import Registro from "./Wilfredo Pino/registro/registro"; // Importa el componente de registro
-import { dev } from 'astro'
+import Login from "./Wilfredo Pino/Login/login"; 
+
+
 
 
 function App() {
