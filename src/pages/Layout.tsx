@@ -18,15 +18,19 @@ function MainMenu() {
                 <Link to="/Uh2">Uh2</Link>
             </li>
             <li>
-                <Link to="/login">login</Link>
+                <Link to="/login">Login</Link>
             </li>
-           
+
+            <li>
+                <Link to="/registro">Registro</Link>
+            </li>
+
         </ul>
     </nav>
 
 }
 
-const Footer = () => <footer>Pagina creada por Jacobo</footer>
+const Footer = () => <footer>Pagina creada por Alumnos de 2 DAM</footer>
 
 function Layout() {
     return (
