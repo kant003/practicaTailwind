@@ -5,15 +5,29 @@
   text-align: center;
 }
 
+.div-Galeria {
+  @apply rounded-lg p-4 z-0 relative justify-items-center hover:scale-150 hover:bg-gray-400 hover:z-10 hover:border-black hover:border-2
+}
+
+.img-Galeria {
+  @apply border-4 border-black rounded-lg h-60
+}
+
+.descripcion-Galeria {
+  @apply italic
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +36,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
