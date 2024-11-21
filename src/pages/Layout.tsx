@@ -9,6 +9,9 @@ function MainMenu() {
                 <Link to="/E2">Ejercicio2</Link>
             </li>
             <li>
+                <Link to="/E3">PaginaGatitos</Link>
+            </li>
+            <li>
                 <Link to="/Galeria">GaleriaNicolas</Link>
             </li>
             <li>
