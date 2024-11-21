@@ -16,6 +16,9 @@ import Formulario from './pages/Formulario'
 import Phone from './pages/Roi/Phone'
 import PaginaGaleria from './pages/PaginaGaleria'
 import UH3 from './pages/UH3'
+import Login from "./pages/Wilfredo/Login"
+import Registro from "./pages/Wilfredo/Registro"
+
 
 function App() {
 
@@ -23,11 +26,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
-          <Route path="T" element={<Tarjeta/>} />
+          <Route path="T" element={<Tarjeta />} />
           <Route path="E1" element={<Ejer1 />} />
           <Route path="E2" element={<Ejer2 />} />
           <Route path='E3' element={<PaginaGatitos />} />
-          <Route path="E3" element={<Ejer3/>} />
+          <Route path="E3" element={<Ejer3 />} />
           <Route path="KieneresTU" element={<KieneresTU />} />
           <Route path="Formulario" element={<Formulario />} />
           <Route path="Uh2" element={<Uh2 />} />
@@ -35,6 +38,9 @@ function App() {
           <Route path="UH3" element={<UH3 />} />
           <Route path="Galeria" element={<PaginaGaleria />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="Login" element={<Login />} />
+          <Route path="Registro" element={<Registro />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
