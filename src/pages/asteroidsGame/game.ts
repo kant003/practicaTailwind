@@ -67,7 +67,7 @@ export default function initGame() {
 
 
     function checkPlayerAsteroidCollision():boolean{
-        
+
     }
 
     function collisionBulletAsteroid(): boolean{
