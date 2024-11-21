@@ -11,12 +11,26 @@ function MainMenu() {
             <li>
                 <Link to="/E3">PaginaGatitos</Link>
             </li>
-
+            <li>
+                <Link to="/Galeria">GaleriaNicolas</Link>
+            </li>
+            <li>
+                <Link to="/KieneresTU">KieneresTU</Link>
+            </li>
+            <li>
+                <Link to="/Formulario">Formulario</Link>
+            </li>
+            <li>
+                <Link to="/Uh2">Uh2</Link>
+            </li>
+            <li>
+                <Link to="/E3">Ejercicio2</Link>
+            </li>
         </ul>
-    </nav >
+    </nav>
 }
 
-const Footer = () => <footer>Pagina creada por Angel</footer>
+const Footer = () => <footer>Pagina creada por Jacobo</footer>
 
 function Layout() {
     return (
