@@ -56,7 +56,6 @@ export default function initGame() {
         })
 
         // Destruir asteroides fuera del mundo
-        
         collisionBulletAsteroid()
 
         gameOver = checkPlayerAsteroidCollision()
@@ -66,8 +65,8 @@ export default function initGame() {
     gameLoop()
 
 
-    function checkPlayerAsteroidCollision():boolean{
-        
+    function checkPlayerAsteroidCollision(): boolean{
+        return false
     }
 
     function collisionBulletAsteroid(): boolean{

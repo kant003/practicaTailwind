@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+.div-Galeria {
+  @apply rounded-lg p-4 z-0 relative justify-items-center hover:scale-150 hover:bg-gray-400 hover:z-10 hover:border-black hover:border-2
+}
+
+.img-Galeria {
+  @apply border-4 border-black rounded-lg h-60
+}
+
+.descripcion-Galeria {
+  @apply italic
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -42,4 +54,8 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.radial-progress {
+  background: conic-gradient(var(--color) calc(var(--value) * 1%), #eee 0);
 }

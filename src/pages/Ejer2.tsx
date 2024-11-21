@@ -1,3 +1,4 @@
+import "flyonui/flyonui"
 function Ejer2() {
     return (
         <div className="accordion divide-neutral/20 max-w-lg divide-y">
