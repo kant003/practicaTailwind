@@ -35,6 +35,9 @@ function MainMenu() {
             <li>
               <Link to="/T">Tarjeta</Link>
             </li>
+            <li>
+              <Link to="/ScrollPage">Scroll Page</Link>
+           </li>
         </ul>
     </nav>
 }

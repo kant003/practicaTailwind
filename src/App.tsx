@@ -5,10 +5,9 @@ import Ejer1 from './pages/Ejer1'
 import Ejer2 from './pages/Ejer2'
 import PaginaGatitos from './pages/mario/PaginaGatitos.tsx'
 import Ejer3 from './pages/Ejer3'
-
 import Layout from './pages/Layout'
 import NotFound from './pages/NotFound'
-
+import ScrollPage from './pages/ScrollPage'
 import Tarjeta from './pages/tarjeta/Tarjeta'
 import Uh2 from './pages/BraisCasares/uh2'
 import KieneresTU from './pages/KieneresTU'
@@ -23,6 +22,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
+          <Route path="ScrollPage" element= {<ScrollPage/>} />
           <Route path="T" element={<Tarjeta/>} />
           <Route path="E1" element={<Ejer1 />} />
           <Route path="E2" element={<Ejer2 />} />
