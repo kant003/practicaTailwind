@@ -22,7 +22,9 @@ export abstract class Mobile{
         this.velocity.x *= friction
         this.velocity.y *= friction
 
+    }
 
+    sphericWorld(){
         if (this.x < 0) {
             this.x = WIDTH
             this.y = HEIGHT - this.y
@@ -40,4 +42,9 @@ export abstract class Mobile{
             this.x = WIDTH - this.x
         }
     }
+
+
+    isOutOfBounds():boolean{
+        return this.x<0 || this.x>WIDTH || this.y<0 || this.y>HEIGHT
+    }   
 }
