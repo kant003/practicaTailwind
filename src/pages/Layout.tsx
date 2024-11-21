@@ -17,6 +17,9 @@ function MainMenu() {
             <li>
                 <Link to="/Uh2">Uh2</Link>
             </li>
+            <li>
+            <Link to="/selector22">Selector</Link>
+            </li>
         </ul>
     </nav>
 
@@ -34,6 +37,6 @@ function Layout() {
         </main>
     )
 }
-
+ 
 
 export default Layout
