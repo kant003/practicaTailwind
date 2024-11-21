@@ -5,17 +5,23 @@ import Ejer2 from './pages/Ejer2'
 import Ejer3 from './pages/Ejer3'
 import Layout from './pages/Layout'
 import NotFound from './pages/NotFound'
+import Uh2 from './pages/BraisCasares/uh2'
+import KieneresTU from './pages/KieneresTU'
+import Formulario from './pages/Formulario'
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>} >
-            <Route path="E1" element={<Ejer1/>} />
-            <Route path="E2" element={<Ejer2/>} />
-            <Route path="E3" element={<Ejer3/>} />
-            <Route path="*" element={<NotFound/>} />
+        <Route path="/" element={<Layout />} >
+          <Route path="E1" element={<Ejer1 />} />
+          <Route path="E2" element={<Ejer2 />} />
+          <Route path="E3" element={<Ejer3/>} />
+          <Route path="KieneresTU" element={<KieneresTU />} />
+          <Route path="Formulario" element={<Formulario />} />
+          <Route path="Uh2" element={<Uh2 />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
