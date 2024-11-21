@@ -13,7 +13,8 @@ export default function initGame() {
 
     const player1 = new Player(WIDTH / 2, HEIGHT / 2)
     const asteroids: Asteroid[] = []
-
+    const PLAYER_FRICTION = 0.99
+    const ASTEROID_FRICTION = 1
     asteroids.push(new EdgeAsteroidFactory().create())
     asteroids.push(new EdgeAsteroidFactory().create())
 
@@ -23,13 +24,15 @@ export default function initGame() {
     }, 1000)
 
     function gameLoop() {
+        if(!ctx) return
+        
         ctx?.clearRect(0, 0, canvas.width, canvas.height)
 
         player1.draw(ctx)
-        player1.update()
+        player1.update(PLAYER_FRICTION)
 
         asteroids.forEach(asteroid => {
-            asteroid.update()
+            asteroid.update(ASTEROID_FRICTION)
             asteroid.draw(ctx)
         })
 
