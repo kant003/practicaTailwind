@@ -37,8 +37,8 @@ function MainMenu() {
             </li>
             <li>
               <Link to="/ScrollPage">Scroll Page</Link>
-           </li>
-           <li>
+            </li>
+            <li>
               <Link to="/uh35">uh35</Link>
            </li>
            <li>
@@ -46,6 +46,9 @@ function MainMenu() {
            </li>
            <li>
               <Link to="/Uh37">Teclado</Link>
+           </li>
+           <li>
+               <Link to="/selector22">Selector</Link>
            </li>
         </ul>
     </nav>
@@ -63,6 +66,6 @@ function Layout() {
         </main>
     )
 }
-
+ 
 
 export default Layout

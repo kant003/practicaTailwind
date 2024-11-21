@@ -13,6 +13,7 @@ import Tarjeta from './pages/tarjeta/Tarjeta'
 import Uh2 from './pages/BraisCasares/uh2'
 import KieneresTU from './pages/KieneresTU'
 import Formulario from './pages/Formulario'
+import Selector22 from './pages/OSCAR/selector22' 
 import Phone from './pages/Roi/Phone'
 import PaginaGaleria from './pages/PaginaGaleria'
 import UH3 from './pages/UH3'
@@ -39,6 +40,7 @@ function App() {
           <Route path="uh35" element={<Uh35/>} />
           <Route path="Boton" element={<Boton />} />
           <Route path="Uh37" element={<Uh37/>} />
+          <Route path="selector22" element={<Selector22/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
