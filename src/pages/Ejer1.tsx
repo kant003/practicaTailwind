@@ -1,12 +1,12 @@
 import { useEffect } from "react"
 import initGame from "./asteroidsGame/game"
 
-export default function Ejer1(){
+export default function Ejer1() {
 
-    useEffect( ()=>{
+    useEffect(() => {
         initGame()
     }, [])
 
-    return <canvas id="miCanvas"/>
-        
+    return <canvas id="miCanvas" />
+
 }
