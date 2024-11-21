@@ -56,7 +56,6 @@ export default function initGame() {
         })
 
         // Destruir asteroides fuera del mundo
-        
         collisionBulletAsteroid()
 
         gameOver = checkPlayerAsteroidCollision()
