@@ -6,6 +6,8 @@ import Ejer2 from './pages/Ejer2'
 import Ejer3 from './pages/Ejer3'
 import Layout from './pages/Layout'
 import NotFound from './pages/NotFound'
+
+import Tarjeta from './pages/tarjeta/Tarjeta'
 import Uh2 from './pages/BraisCasares/uh2'
 import KieneresTU from './pages/KieneresTU'
 import Formulario from './pages/Formulario'
@@ -18,6 +20,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
+          <Route path="T" element={<Tarjeta/>} />
           <Route path="E1" element={<Ejer1 />} />
           <Route path="E2" element={<Ejer2 />} />
           <Route path="E3" element={<Ejer3/>} />
