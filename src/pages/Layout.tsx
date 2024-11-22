@@ -60,6 +60,9 @@ function MainMenu() {
            <li>
                <Link to="/Uh20">User history 20</Link>
            </li>
+           <li>
+               <Link to="/EjApexGraph">EjApexGraph</Link>
+           </li>
         </ul>
     </nav>
 }

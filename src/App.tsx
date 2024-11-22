@@ -21,6 +21,7 @@ import Login from "./pages/Wilfredo/Login"
 import Registro from "./pages/Wilfredo/Registro"
 import Uh37 from './pages/Uh37'
 import { Phone } from 'lucide-react'
+import EjApexGraph from './pages/EjApexGraph.tsx'
 function App() {
 
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="Login" element={<Login />} />
           <Route path="Registro" element={<Registro />} />
+          <Route path="EjApexGraph" element={<EjApexGraph />} />
         </Route>
       </Routes>
     </BrowserRouter>
