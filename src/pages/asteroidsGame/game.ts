@@ -12,6 +12,9 @@ export default function initGame() {
     canvas.style.border = '1px solid white'
 
     const player1 = new Player(WIDTH / 2, HEIGHT / 2)
+    player1.color='white'
+    const player2 = new Player(WIDTH / 2 - 40, HEIGHT / 2)
+    player2.color='green'
     const asteroids: Asteroid[] = []
     const PLAYER_FRICTION = 0.99
     const ASTEROID_FRICTION = 1
@@ -32,6 +35,7 @@ export default function initGame() {
         ctx?.clearRect(0, 0, canvas.width, canvas.height)
         
         player1.drawScore(ctx, 'izq')
+        player2.drawScore(ctx, 'der')
 
         if(gameOver){
             ctx.fillStyle = 'red'
@@ -42,12 +46,21 @@ export default function initGame() {
         }
 
         player1.draw(ctx)
+
+        player2.draw(ctx)
         player1.update(PLAYER_FRICTION)
+        player2.update(PLAYER_FRICTION)
 
 
         player1.bullets = player1.bullets.filter(bullet => !bullet.isOutOfBounds())
+        player2.bullets = player2.bullets.filter(bullet => !bullet.isOutOfBounds())
 
         player1.bullets.forEach(bullet =>{
+            bullet.draw(ctx)
+            bullet.update(1)
+        })
+
+        player2.bullets.forEach(bullet =>{
             bullet.draw(ctx)
             bullet.update(1)
         })
@@ -59,13 +72,25 @@ export default function initGame() {
 
         // Destruir asteroides fuera del mundo
         collisionBulletAsteroid(player1)
+        collisionBulletAsteroid(player2)
 
         gameOver = checkCollisionPlayerAsteroid(player1)
+        if(!gameOver)  gameOver = checkCollisionPlayerAsteroid(player2)
 
+        
         requestAnimationFrame(gameLoop)
     }
     gameLoop()
 
+    //const backgroundMusic = new Audio('./sounds/background.mp3')
+    //window.addEventListener("load", ()=>{
+    //    console.log('aa')
+      //  backgroundMusic.play()
+       // backgroundMusic.loop = true
+      //  backgroundMusic.autoplay = true
+        //backgroundMusic.volume = 0.5
+    //})
+   
 
     function collisionBulletAsteroid(player: Player): boolean{
         asteroids.forEach((asteroid, asteroidIndex) => {
@@ -76,8 +101,7 @@ export default function initGame() {
                 if(distance <= asteroid.size + bullet.size){
                     asteroids.splice(asteroidIndex,1)
                     player.bullets.splice(bulletIndex, 1)
-                    const sound = new Audio('./sounds/explosion.mp3')
-                    sound.play()
+                    asteroid.playSound()
                     player.score ++
                     return true
                 }
@@ -100,16 +124,27 @@ export default function initGame() {
 
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') player1.isRotatingLeft = true
-        if (e.key === 'ArrowRight') player1.isRotatingRight = true
-        if (e.key === 'ArrowUp') player1.isThrusting = true
-        if (e.key.toLocaleLowerCase() === 'p') player1.shot()
+        const lowerCase = e.key.toLocaleLowerCase()
+        if (e.key === 'ArrowLeft') player2.isRotatingLeft = true
+        if (e.key === 'ArrowRight') player2.isRotatingRight = true
+        if (e.key === 'ArrowUp') player2.isThrusting = true
+        if (lowerCase === 'p') player2.shot()
+
+
+        if (lowerCase === 'a') player1.isRotatingLeft = true
+        if (lowerCase === 'd') player1.isRotatingRight = true
+        if (lowerCase === 'w') player1.isThrusting = true
+        if (lowerCase === 'q') player1.shot()
 
     })
 
     document.addEventListener('keyup', (e) => {
-        if (e.key === 'ArrowLeft') player1.isRotatingLeft = false
-        if (e.key === 'ArrowRight') player1.isRotatingRight = false
-        if (e.key === 'ArrowUp') player1.isThrusting = false
+        if (e.key === 'ArrowLeft') player2.isRotatingLeft = false
+        if (e.key === 'ArrowRight') player2.isRotatingRight = false
+        if (e.key === 'ArrowUp') player2.isThrusting = false
+
+        if (e.key === 'a') player1.isRotatingLeft = false
+        if (e.key === 'd') player1.isRotatingRight = false
+        if (e.key === 'w') player1.isThrusting = false
     })
 }
