@@ -50,7 +50,6 @@ export class Player extends Mobile{
 
     shot(){
         const newBullet = new Bullet(this.x, this.y, this.angle)
-
         this.bullets.push(newBullet)
     }
 

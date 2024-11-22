@@ -58,16 +58,12 @@ export default function initGame() {
         // Destruir asteroides fuera del mundo
         collisionBulletAsteroid()
 
-        gameOver = checkPlayerAsteroidCollision()
+        gameOver = checkCollisionPlayerAsteroid(player1)
 
         requestAnimationFrame(gameLoop)
     }
     gameLoop()
 
-
-    function checkPlayerAsteroidCollision(): boolean{
-        return false
-    }
 
     function collisionBulletAsteroid(): boolean{
         asteroids.forEach((asteroid, asteroidIndex) => {
@@ -84,6 +80,16 @@ export default function initGame() {
                 }
             })
         })
+        return false
+    }
+
+    function checkCollisionPlayerAsteroid(player: Player):boolean{
+        for(const asteroid of asteroids){
+            const dx = asteroid.x - player.x
+            const dy = asteroid.y - player.y
+            const distance = Math.sqrt(dx*dx  +  dy*dy)
+            if(distance <= asteroid.size + player.size) return true
+        }
         return false
     }
 
