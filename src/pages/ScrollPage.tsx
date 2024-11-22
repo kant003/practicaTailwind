@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef } from "react"
 
 function ScrollPage() {
     const [isVisible, setIsVisible] = useState(false)
@@ -9,6 +9,9 @@ function ScrollPage() {
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setIsVisible(true)
+                }
+                if (!entry.isIntersecting) {
+                    setIsVisible(false)
                 }
             },
             { threshold: 0.5 }
@@ -27,9 +30,9 @@ function ScrollPage() {
 
     return (
         <div className="min-h-screen">
-            <section className="h-screen bg-gray-600 flex flex-col justify-center items-center text-white">
-                <h1 className="text-5xl font-bold">Pagina Principal</h1>
-                <p className="text-lg mt-4">Scroll de la pagina web</p>
+            <section className="h-screen bg-gray-600 flex flex-col justify-center items-center">
+                <h1 className="text-5xl font-bold text-black">Pagina Principal</h1>
+                <p className="text-lg mt-4 text-white">Scroll de la pagina web</p>
             </section>
 
             <section
@@ -38,7 +41,10 @@ function ScrollPage() {
                     isVisible ? "opacity-100" : "opacity-0"
                 }`}
             >
-                <h2 className="text-4xl font-bold text-black">Pagina tras Scrollear havia abajo</h2>
+                <div className="text-lg">
+                <h1 className="font-bold animate-colorShift">Pagina tras Scrollear hacia abajo</h1>
+                </div>
+
                 <p className="text-lg mt-4 text-gray-700">
                     Este es el contenido despues de hacer Scroll
                 </p>
