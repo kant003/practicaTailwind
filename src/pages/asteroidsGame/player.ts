@@ -1,4 +1,5 @@
 import { Bullet } from "./bullet"
+import { WIDTH } from "./game"
 import { Mobile } from "./mobile"
 
 export class Player extends Mobile{
@@ -11,6 +12,7 @@ export class Player extends Mobile{
     rotationSpeed: number
 
     bullets: Bullet[] = []
+    score: number = 0
 
     constructor(public x: number, public y: number) {
         super(x,y,0,0.2,20)
@@ -51,8 +53,17 @@ export class Player extends Mobile{
     shot(){
         const newBullet = new Bullet(this.x, this.y, this.angle)
         this.bullets.push(newBullet)
+        const sound = new Audio('./sounds/laser.wav')
+        sound.play()
+
     }
 
+    drawScore(ctx: CanvasRenderingContext2D, pos:'izq'|'der'){
+        ctx.fillStyle = 'white'
+        ctx.font = "24px arial"
+        if(pos === 'izq') ctx.fillText(`Score Player 1: ${this.score}`, 20, 40)
+        else  ctx.fillText(`Score Player 2: ${this.score}`, WIDTH-40, 40)
+    }
 
 
 

@@ -30,6 +30,8 @@ export default function initGame() {
         if(!ctx) return
         
         ctx?.clearRect(0, 0, canvas.width, canvas.height)
+        
+        player1.drawScore(ctx, 'izq')
 
         if(gameOver){
             ctx.fillStyle = 'red'
@@ -56,7 +58,7 @@ export default function initGame() {
         })
 
         // Destruir asteroides fuera del mundo
-        collisionBulletAsteroid()
+        collisionBulletAsteroid(player1)
 
         gameOver = checkCollisionPlayerAsteroid(player1)
 
@@ -65,17 +67,18 @@ export default function initGame() {
     gameLoop()
 
 
-    function collisionBulletAsteroid(): boolean{
+    function collisionBulletAsteroid(player: Player): boolean{
         asteroids.forEach((asteroid, asteroidIndex) => {
-            player1.bullets.forEach((bullet, bulletIndex) => {
+            player.bullets.forEach((bullet, bulletIndex) => {
                 const dx = asteroid.x - bullet.x
                 const dy = asteroid.y - bullet.y
                 const distance = Math.sqrt(dx*dx  +  dy*dy)
                 if(distance <= asteroid.size + bullet.size){
                     asteroids.splice(asteroidIndex,1)
-                    player1.bullets.splice(bulletIndex, 1)
+                    player.bullets.splice(bulletIndex, 1)
                     const sound = new Audio('./sounds/explosion.mp3')
                     sound.play()
+                    player.score ++
                     return true
                 }
             })
