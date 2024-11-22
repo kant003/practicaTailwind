@@ -24,10 +24,10 @@ function MainMenu() {
                 <Link to="/Uh2">Uh2</Link>
             </li>
             <li>
-                 <Link to="/Phone">Movil</Link>
+                <Link to="/Phone">Movil</Link>
             </li>
             <li>
-                 <Link to="/UH3">UH3</Link>
+                <Link to="/UH3">UH3</Link>
             </li>
             <li>
                 <Link to="/E3">Ejercicio2</Link>
@@ -40,29 +40,32 @@ function MainMenu() {
                 <Link to="/registro">Registro</Link>
             </li>
             <li>
-              <Link to="/T">Tarjeta</Link>
+                <Link to="/T">Tarjeta</Link>
             </li>
             <li>
-              <Link to="/ScrollPage">Scroll Page</Link>
+                <Link to="/ScrollPage">Scroll Page</Link>
             </li>
             <li>
-              <Link to="/uh35">uh35</Link>
-           </li>
-           <li>
-            <Link to="/Boton">Boton</Link>
-           </li>
-           <li>
-              <Link to="/Uh37">Teclado</Link>
-           </li>
-           <li>
-               <Link to="/selector22">Selector</Link>
-           </li>
-           <li>
-               <Link to="/Uh20">User history 20</Link>
-           </li>
-           <li>
-               <Link to="/EjApexGraph">EjApexGraph</Link>
-           </li>
+                <Link to="/uh35">uh35</Link>
+            </li>
+            <li>
+                <Link to="/Boton">Boton</Link>
+            </li>
+            <li>
+                <Link to="/Uh37">Teclado</Link>
+            </li>
+            <li>
+                <Link to="/selector22">Selector</Link>
+            </li>
+            <li>
+                <Link to="/Uh20">User history 20</Link>
+            </li>
+            <li>
+                <Link to="/EjApexGraph">EjApexGraph</Link>
+            </li>
+            <li>
+                <Link to="/treeview">Tree View</Link>
+            </li>
         </ul>
     </nav>
 }
@@ -79,6 +82,6 @@ function Layout() {
         </main>
     )
 }
- 
+
 
 export default Layout
