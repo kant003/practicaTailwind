@@ -7,7 +7,7 @@ import Uh35 from './pages/uh35'
 import Selector22 from './pages/OSCAR/Selector22'
 import PaginaGatitos from './pages/mario/PaginaGatitos.tsx'
 import Layout from './pages/Layout'
-import Boton from "./pages/Boton";
+import Boton from "./pages/Boton"
 import NotFound from './pages/NotFound'
 import Uh20 from './pages/Uh20'
 import ScrollPage from './pages/ScrollPage'
@@ -22,9 +22,10 @@ import Registro from "./pages/Wilfredo/Registro"
 import Uh37 from './pages/Uh37'
 import { Phone } from 'lucide-react'
 import EjApexGraph from './pages/EjApexGraph.tsx'
+import FormularioDeRegistro from './pages/AdrianSouto/formularioRegistro.tsx'
 import Treeview from './components/Treeview.tsx'
-function App() {
 
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -51,10 +52,10 @@ function App() {
           <Route path="Registro" element={<Registro />} />
           <Route path="EjApexGraph" element={<EjApexGraph />} />
           <Route path="treeview" element={<Treeview />} />
+          <Route path="formularioRegistro" element={<FormularioDeRegistro/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
   )
 }
-
 export default App
