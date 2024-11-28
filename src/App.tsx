@@ -21,7 +21,7 @@ import UH3 from './pages/UH3'
 import Login from "./pages/Wilfredo/Login"
 import Registro from "./pages/Wilfredo/Registro"
 import Uh37 from './pages/Uh37'
-import { Phone } from 'lucide-react'
+import Phone from './pages/Roi/Phone.tsx'
 import EjApexGraph from './pages/EjApexGraph.tsx'
 import Avatares from './pages/Avatares.tsx'
 import FormularioDeRegistro from './pages/AdrianSouto/formularioRegistro.tsx'
