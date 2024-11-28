@@ -2,7 +2,7 @@ export default function Treeview() {
 
   return (<>
     <div
-      className="accordion-treeview-root"
+      className="accordion-treeview-root mx-auto my-5"
       role="tree"
       aria-orientation="vertical"
     >
@@ -22,10 +22,10 @@ export default function Treeview() {
             >
               <span className="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
             </button>
-            <div className="accordion-selectable accordion-selected:bg-base-200/60 grow cursor-pointer rounded-md px-1.5">
+            <div className="accordion-selectable accordion-selected:bg-base-200/60 grow cursor-pointer rounded-md px-1.5 max-w-fit">
               <div className="flex items-center gap-x-3">
                 <span className="icon-[tabler--folder] text-base-content/90 size-4 flex-shrink-0"></span>
-                <div className="grow">
+                <div className="shrink ">
                   <span className="text-base-content/90">assets</span>
                 </div>
               </div>
@@ -57,10 +57,10 @@ export default function Treeview() {
                   >
                     <span className="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
                   </button>
-                  <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5">
+                  <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5 max-w-fit">
                     <div className="flex items-center gap-x-3">
                       <span className="icon-[tabler--folder] text-base-content/90 size-4 flex-shrink-0"></span>
-                      <div className="grow">
+                      <div className="shrink">
                         <span className="text-base-content/90">css</span>
                       </div>
                     </div>
@@ -92,10 +92,10 @@ export default function Treeview() {
                         >
                           <span className="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
                         </button>
-                        <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5">
+                        <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5 max-w-fit">
                           <div className="flex items-center gap-x-3">
                             <span className="icon-[tabler--folder] text-base-content/90 size-4 flex-shrink-0"></span>
-                            <div className="grow">
+                            <div className="shrink">
                               <span className="text-base-content/90">
                                 main
                               </span>
@@ -111,12 +111,12 @@ export default function Treeview() {
                       >
                         <div className="tree-view-space">
                           <div
-                            className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                            className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                             role="treeitem"
                           >
                             <div className="flex items-center gap-x-3">
                               <span className="icon-[tabler--file] text-base-content/90 size-4 flex-shrink-0"></span>
-                              <div className="grow">
+                              <div className="shrink">
                                 <span className="text-base-content/90">
                                   main.css
                                 </span>
@@ -124,19 +124,19 @@ export default function Treeview() {
                             </div>
                           </div>
                           <div
-                            className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                            className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                             role="treeitem"
                           >
                             <div className="flex items-center gap-x-3">
                               <span className="icon-[tabler--file] text-base-content/90 size-4 flex-shrink-0"></span>
-                              <div className="grow">
+                              <div className="shrink">
                                 <span className="text-base-content/90">
                                   docs.css
                                 </span>
                               </div>
                             </div>
                           </div>
-                          <div className="px-2">
+                          <div className="px-2 max-w-fit">
                             <span className="text-base-content/90">
                               README.txt
                             </span>
@@ -159,7 +159,7 @@ export default function Treeview() {
                         >
                           <span className="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
                         </button>
-                        <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5">
+                        <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5 max-w-fit">
                           <div className="flex items-center gap-x-3">
                             <span className="icon-[tabler--folder] text-base-content/90 size-4 flex-shrink-0"></span>
                             <div className="grow">
@@ -178,12 +178,12 @@ export default function Treeview() {
                       >
                         <div className="tree-view-space">
                           <div
-                            className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                            className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                             role="treeitem"
                           >
                             <div className="flex items-center gap-x-3">
                               <span className="icon-[tabler--file] text-base-content/90 size-4 flex-shrink-0"></span>
-                              <div className="grow">
+                              <div className="shrink">
                                 <span className="text-base-content/90">
                                   input.css
                                 </span>
@@ -194,7 +194,7 @@ export default function Treeview() {
                       </div>
                     </div>
                     <div
-                      className="accordion-item"
+                      className="accordion-item max-w-fit"
                       role="treeitem"
                       aria-expanded="false"
                       id="basic-tree-sub-level-two-heading-three"
@@ -213,12 +213,12 @@ export default function Treeview() {
                       >
                         <div className="tree-view-space">
                           <div
-                            className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                            className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                             role="treeitem"
                           >
                             <div className="flex items-center gap-x-3">
                               <span className="icon-[tabler--file] text-base-content/90 size-4 flex-shrink-0"></span>
-                              <div className="grow">
+                              <div className="shrink">
                                 <span className="text-base-content/90">
                                   algolia.css
                                 </span>
@@ -241,10 +241,10 @@ export default function Treeview() {
                   >
                     <span className="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
                   </button>{" "}
-                  <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5">
+                  <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5 max-w-fit">
                     <div className="flex items-center gap-x-3">
                       <span className="icon-[tabler--folder] text-base-content/90 size-4 flex-shrink-0"></span>
-                      <div className="grow">
+                      <div className="shrink">
                         <span className="text-base-content/90">img</span>
                       </div>
                     </div>
@@ -258,12 +258,12 @@ export default function Treeview() {
                 >
                   <div className="tree-view-space">
                     <div
-                      className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                      className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                       role="treeitem"
                     >
                       <div className="flex items-center gap-x-3">
                         <span className="icon-[tabler--photo] text-base-content/90 size-4 flex-shrink-0"></span>
-                        <div className="grow">
+                        <div className="shrink">
                           <span className="text-base-content/90">
                             hero.jpg
                           </span>
@@ -271,12 +271,12 @@ export default function Treeview() {
                       </div>
                     </div>
                     <div
-                      className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                      className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                       role="treeitem"
                     >
                       <div className="flex items-center gap-x-3">
                         <span className="icon-[tabler--photo] text-base-content/90 size-4 flex-shrink-0"></span>
-                        <div className="grow">
+                        <div className="shrink">
                           <span className="text-base-content/90">
                             tailwind.png
                           </span>
@@ -284,12 +284,12 @@ export default function Treeview() {
                       </div>
                     </div>
                     <div
-                      className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                      className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                       role="treeitem"
                     >
                       <div className="flex items-center gap-x-3">
                         <span className="icon-[tabler--photo] text-base-content/90 size-4 flex-shrink-0"></span>
-                        <div className="grow">
+                        <div className="shrink">
                           <span className="text-base-content/90">
                             untitled.png
                           </span>
@@ -314,7 +314,7 @@ export default function Treeview() {
                   >
                     <span className="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
                   </button>
-                  <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5">
+                  <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5 max-w-fit">
                     <div className="flex items-center gap-x-3">
                       <span className="icon-[tabler--folder] text-base-content/90 size-4 flex-shrink-0"></span>
                       <div className="grow">
@@ -331,12 +331,12 @@ export default function Treeview() {
                 >
                   <div className="tree-view-space">
                     <div
-                      className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                      className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                       role="treeitem"
                     >
                       <div className="flex items-center gap-x-3">
                         <span className="icon-[tabler--photo] text-base-content/90 size-4 flex-shrink-0"></span>
-                        <div className="grow">
+                        <div className="shrink">
                           <span className="text-base-content/90">
                             flyonui.js
                           </span>
@@ -364,10 +364,10 @@ export default function Treeview() {
             >
               <span className="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
             </button>
-            <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5">
+            <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5 max-w-fit">
               <div className="flex items-center gap-x-3">
                 <span className="icon-[tabler--folder] text-base-content/90 size-4 flex-shrink-0"></span>
-                <div className="grow">
+                <div className="shrink">
                   <span className="text-base-content/90">scripts</span>
                 </div>
               </div>
@@ -381,7 +381,7 @@ export default function Treeview() {
           >
             <div className="tree-view-space">
               <div
-                className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                 role="treeitem"
               >
                 <div className="flex items-center gap-x-3">
@@ -392,23 +392,23 @@ export default function Treeview() {
                 </div>
               </div>
               <div
-                className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                 role="treeitem"
               >
                 <div className="flex items-center gap-x-3">
                   <span className="icon-[tabler--file] text-base-content/90 size-4 flex-shrink-0"></span>
-                  <div className="grow">
+                  <div className="shrink">
                     <span className="text-base-content/90">tailwind.js</span>
                   </div>
                 </div>
               </div>
               <div
-                className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                 role="treeitem"
               >
                 <div className="flex items-center gap-x-3">
                   <span className="icon-[tabler--file] text-base-content/90 size-4 flex-shrink-0"></span>
-                  <div className="grow">
+                  <div className="shrink">
                     <span className="text-base-content/90">www.js</span>
                   </div>
                 </div>
@@ -431,10 +431,10 @@ export default function Treeview() {
             >
               <span className="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
             </button>
-            <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5">
+            <div className="accordion-selectable accordion-selected:bg-base-200/90 grow cursor-pointer rounded-md px-1.5 max-w-fit">
               <div className="flex items-center gap-x-3">
                 <span className="icon-[tabler--folder] text-base-content/90 size-4 flex-shrink-0"></span>
-                <div className="grow">
+                <div className="shrink">
                   <span className="text-base-content/90">templates</span>
                 </div>
               </div>
@@ -448,12 +448,12 @@ export default function Treeview() {
           >
             <div className="tree-view-space">
               <div
-                className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2"
+                className="accordion-selectable accordion-selected:bg-base-200/90 cursor-pointer rounded-md px-2 max-w-fit"
                 role="treeitem"
               >
                 <div className="flex items-center gap-x-3">
                   <span className="icon-[tabler--file] text-base-content/90 size-4 flex-shrink-0"></span>
-                  <div className="grow">
+                  <div className="shrink">
                     <span className="text-base-content/90">index.html</span>
                   </div>
                 </div>
