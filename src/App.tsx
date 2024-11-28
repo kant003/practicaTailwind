@@ -16,6 +16,7 @@ import Formulario from './pages/Formulario'
 import Phone from './pages/Roi/Phone'
 import PaginaGaleria from './pages/PaginaGaleria'
 import UH3 from './pages/UH3'
+import Carousel from './pages/Carrousel.tsx'
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="UH3" element={<UH3 />} />
           <Route path="Galeria" element={<PaginaGaleria />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="Carousel" element={<Carousel/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
