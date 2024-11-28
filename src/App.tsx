@@ -22,6 +22,7 @@ import Registro from "./pages/Wilfredo/Registro"
 import Uh37 from './pages/Uh37'
 import { Phone } from 'lucide-react'
 import EjApexGraph from './pages/EjApexGraph.tsx'
+import Avatares from './pages/Avatares.tsx'
 function App() {
 
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="Login" element={<Login />} />
           <Route path="Registro" element={<Registro />} />
           <Route path="EjApexGraph" element={<EjApexGraph />} />
+          <Route path="Avatares" element={<Avatares />} />
         </Route>
       </Routes>
     </BrowserRouter>

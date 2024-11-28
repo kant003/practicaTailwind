@@ -63,6 +63,9 @@ function MainMenu() {
            <li>
                <Link to="/EjApexGraph">EjApexGraph</Link>
            </li>
+           <li>
+               <Link to="/Avatares">Avatares</Link>
+           </li>
         </ul>
     </nav>
 }
