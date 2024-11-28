@@ -2,12 +2,12 @@ import { useState } from "react";
 
 function KieneresTU() {
     const [personajeSeleccionado, setPersonajeSeleccionado] = useState("");
-    const [bloqueado, setBloqueado] = useState(null);
+    const [bloqueado, setBloqueado] = useState<string|null>(null);
     const [personajeBloqueado, setPErsonajeBloqueado] = useState(personajeSeleccionado);
-    const lockPersonaje = (personaje, event) => {
+    const lockPersonaje = (personaje:string, event:React.MouseEvent<HTMLImageElement>) => {
         setPersonajeSeleccionado(personaje);
         setPErsonajeBloqueado(personaje)
-        setBloqueado(event.currentTarget.id);
+        setBloqueado(event?.currentTarget?.id);
     };
 
     return (

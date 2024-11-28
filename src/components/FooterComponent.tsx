@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 const FooterComponent = ({margin}:{margin?:number}) => {
 
 const { scrollY } = useScroll()
