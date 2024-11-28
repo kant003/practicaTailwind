@@ -35,7 +35,7 @@ export default function Uh17() {
   React.useEffect(updateBackgroundColor, [red, green, blue]);
 
 
-  return <table draggable='false' className="table cursor-pointer select-none backgroundColor h-[501px] w-[500px] font-bold italic text-4xl" id="tabla">
+  return <table draggable='false'  className="table cursor-pointer select-none backgroundColor h-[501px] w-[500px] font-bold italic text-4xl" id="tabla">
 
     <th className=" px-4 py-2 align-middle" id='redFragment' onClick={changeColorRed} style={{ WebkitTextStroke: "1px black", color: "white" }}>R</th>
     <th className=" px-4 py-2 align-middle" id='greenFragment' onClick={changeColorGreen} style={{ WebkitTextStroke: "1px black", color: "white" }}>G</th>
