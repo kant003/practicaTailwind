@@ -76,6 +76,9 @@ function MainMenu() {
             <li>
                 <Link to="/uh17/Uh17">Uh17</Link>
             </li>
+            <li>
+                <Link to="/Carousel">Carousel</Link>
+            </li>
         </ul>
     </nav>
 }

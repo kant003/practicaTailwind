@@ -18,6 +18,7 @@ import KieneresTU from './pages/KieneresTU'
 import Formulario from './pages/Formulario'
 import PaginaGaleria from './pages/PaginaGaleria'
 import UH3 from './pages/UH3'
+import Carousel from './pages/Carrousel.tsx'
 import Login from "./pages/Wilfredo/Login"
 import Registro from "./pages/Wilfredo/Registro"
 import Uh37 from './pages/Uh37'
@@ -58,6 +59,7 @@ function App() {
           <Route path="treeview" element={<Treeview />} />
           <Route path="formularioRegistro" element={<FormularioDeRegistro/>} />
           <Route path="*" element={<NotFound />} />
+          <Route path="Carousel" element={<Carousel/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
