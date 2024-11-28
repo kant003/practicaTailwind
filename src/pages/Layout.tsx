@@ -64,6 +64,9 @@ function MainMenu() {
                <Link to="/EjApexGraph">EjApexGraph</Link>
            </li>
            <li>
+               <Link to="/Avatares">Avatares</Link>
+           </li>
+           <li>
                <Link to="/formularioRegistro">FormularioRegistro</Link>
            </li>
    
@@ -73,7 +76,6 @@ function MainMenu() {
             <li>
                 <Link to="/uh17/Uh17">Uh17</Link>
             </li>
-
         </ul>
     </nav>
 }
