@@ -9,6 +9,7 @@ import PaginaGatitos from './pages/mario/PaginaGatitos.tsx'
 import Layout from './pages/Layout'
 import Boton from "./pages/Boton"
 import NotFound from './pages/NotFound'
+import Uh17 from './pages/uh17/Uh17'
 import Uh20 from './pages/Uh20'
 import ScrollPage from './pages/ScrollPage'
 import Tarjeta from './pages/tarjeta/Tarjeta'
@@ -29,11 +30,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />} >
+        <Route path="/" element={<Layout/>} >
+          <Route path="E1" element={<Ejer1/>} />
+          <Route path="E2" element={<Ejer2/>} />
+          <Route path="uh17/Uh17" element={<Uh17/>} />
           <Route path="T" element={<Tarjeta />} />
           <Route path="ScrollPage" element={<ScrollPage />} />
-          <Route path="E1" element={<Ejer1 />} />
-          <Route path="E2" element={<Ejer2 />} />
           <Route path='E3' element={<PaginaGatitos />} />
           <Route path="E3" element={<Ejer3 />} />
           <Route path="KieneresTU" element={<KieneresTU />} />
@@ -47,12 +49,12 @@ function App() {
           <Route path="Uh37" element={<Uh37 />} />
           <Route path="selector22" element={<Selector22 />} />
           <Route path="Uh20" element={<Uh20 />} />
-          <Route path="*" element={<NotFound />} />
           <Route path="Login" element={<Login />} />
           <Route path="Registro" element={<Registro />} />
           <Route path="EjApexGraph" element={<EjApexGraph />} />
           <Route path="treeview" element={<Treeview />} />
-          <Route path="formularioRegistro" element={<FormularioDeRegistro/>}/>
+          <Route path="formularioRegistro" element={<FormularioDeRegistro/>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
