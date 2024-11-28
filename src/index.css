@@ -75,3 +75,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.custom-hover {
+  @apply hover:bg-blue-500 hover:text-black;
+}
