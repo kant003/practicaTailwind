@@ -33,10 +33,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>} >
+        <Route path="/practicaTailwind/" element={<Layout/>} >
           <Route path="E1" element={<Ejer1/>} />
           <Route path="E2" element={<Ejer2/>} />
-          <Route path="uh17/Uh17" element={<Uh17/>} />
+          <Route path="Uh17" element={<Uh17/>} />
           <Route path="T" element={<Tarjeta />} />
           <Route path="ScrollPage" element={<ScrollPage />} />
           <Route path='E3' element={<PaginaGatitos />} />
