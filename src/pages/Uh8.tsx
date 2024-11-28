@@ -1,4 +1,4 @@
-function Ejer3 (){
+function Uh8 (){
     return<div className=" px-7">
     <div className="animate-bounce animate-infinite  ">
     Es pagina 3 pero bota
@@ -16,4 +16,4 @@ function Ejer3 (){
     </div>
 }
 
-export default Ejer3
+export default Uh8
