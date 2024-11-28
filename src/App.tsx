@@ -7,8 +7,9 @@ import Uh35 from './pages/uh35'
 import Selector22 from './pages/OSCAR/Selector22'
 import PaginaGatitos from './pages/mario/PaginaGatitos.tsx'
 import Layout from './pages/Layout'
-import Boton from "./pages/Boton";
+import Boton from "./pages/Boton"
 import NotFound from './pages/NotFound'
+import Uh17 from './pages/uh17/Uh17'
 import Uh20 from './pages/Uh20'
 import ScrollPage from './pages/ScrollPage'
 import Tarjeta from './pages/tarjeta/Tarjeta'
@@ -23,16 +24,20 @@ import Uh37 from './pages/Uh37'
 import { Phone } from 'lucide-react'
 import EjApexGraph from './pages/EjApexGraph.tsx'
 import Avatares from './pages/Avatares.tsx'
-function App() {
+import FormularioDeRegistro from './pages/AdrianSouto/formularioRegistro.tsx'
+import Treeview from './components/Treeview.tsx'
 
+
+function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />} >
+        <Route path="/" element={<Layout/>} >
+          <Route path="E1" element={<Ejer1/>} />
+          <Route path="E2" element={<Ejer2/>} />
+          <Route path="uh17/Uh17" element={<Uh17/>} />
           <Route path="T" element={<Tarjeta />} />
-          <Route path="ScrollPage" element= {<ScrollPage/>} />
-          <Route path="E1" element={<Ejer1 />} />
-          <Route path="E2" element={<Ejer2 />} />
+          <Route path="ScrollPage" element={<ScrollPage />} />
           <Route path='E3' element={<PaginaGatitos />} />
           <Route path="E3" element={<Ejer3 />} />
           <Route path="KieneresTU" element={<KieneresTU />} />
@@ -41,20 +46,21 @@ function App() {
           <Route path="Phone" element={<Phone />} />
           <Route path="UH3" element={<UH3 />} />
           <Route path="Galeria" element={<PaginaGaleria />} />
-          <Route path="uh35" element={<Uh35/>} />
+          <Route path="uh35" element={<Uh35 />} />
           <Route path="Boton" element={<Boton />} />
-          <Route path="Uh37" element={<Uh37/>} />
-          <Route path="selector22" element={<Selector22/>}/>
+          <Route path="Uh37" element={<Uh37 />} />
+          <Route path="selector22" element={<Selector22 />} />
           <Route path="Uh20" element={<Uh20 />} />
-          <Route path="*" element={<NotFound />} />
           <Route path="Login" element={<Login />} />
           <Route path="Registro" element={<Registro />} />
           <Route path="EjApexGraph" element={<EjApexGraph />} />
           <Route path="Avatares" element={<Avatares />} />
+          <Route path="treeview" element={<Treeview />} />
+          <Route path="formularioRegistro" element={<FormularioDeRegistro/>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
   )
 }
-
 export default App

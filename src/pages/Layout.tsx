@@ -24,10 +24,10 @@ function MainMenu() {
                 <Link to="/Uh2">Uh2</Link>
             </li>
             <li>
-                 <Link to="/Phone">Movil</Link>
+                <Link to="/Phone">Movil</Link>
             </li>
             <li>
-                 <Link to="/UH3">UH3</Link>
+                <Link to="/UH3">UH3</Link>
             </li>
             <li>
                 <Link to="/E3">Ejercicio2</Link>
@@ -40,10 +40,10 @@ function MainMenu() {
                 <Link to="/registro">Registro</Link>
             </li>
             <li>
-              <Link to="/T">Tarjeta</Link>
+                <Link to="/T">Tarjeta</Link>
             </li>
             <li>
-              <Link to="/ScrollPage">Scroll Page</Link>
+                <Link to="/ScrollPage">Scroll Page</Link>
             </li>
             <li>
               <Link to="/uh35">uh35</Link>
@@ -66,6 +66,16 @@ function MainMenu() {
            <li>
                <Link to="/Avatares">Avatares</Link>
            </li>
+           <li>
+               <Link to="/formularioRegistro">FormularioRegistro</Link>
+           </li>
+   
+            <li>
+                <Link to="/treeview">Tree View</Link>
+            </li>
+            <li>
+                <Link to="/uh17/Uh17">Uh17</Link>
+            </li>
         </ul>
     </nav>
 }
@@ -82,6 +92,6 @@ function Layout() {
         </main>
     )
 }
- 
+
 
 export default Layout
